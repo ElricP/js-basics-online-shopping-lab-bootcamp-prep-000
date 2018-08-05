@@ -1,4 +1,8 @@
 var cart = [];
+//helper function
+function getRandomInt100() {
+  return Math.floor(Math.random() * 99) +1;
+}
 
 function getCart() {
  return cart;
