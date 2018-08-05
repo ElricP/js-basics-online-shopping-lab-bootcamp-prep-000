@@ -43,10 +43,16 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var result = 0;
+  for(var counter = 0; counter < cart.length; counter++){
+    result += cart[counter].itemPrice;
+  }
+  return result;
 }
 
 function removeFromCart(item) {
   // write your code here
+  if
 }
 
 function placeOrder(cardNumber) {
