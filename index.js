@@ -34,7 +34,7 @@ function viewCart() {
       result += ` and ${cart[counter].itemName} at $${cart[counter].itemPrice}.`
     } else 
     {
-      result += ` 
+      result += ` ${cart[counter].itemName} at $${cart[counter].itemPrice},`;
     }
   }
   
