@@ -28,15 +28,16 @@ function viewCart() {
   for(var counter = 0; counter < cart.length; counter++){
     if(cart.length == 1)
     {
-      result += ` ${cart[counter].itemName} at $${cart[counter].itemPrice}.`
+      result += ` ${cart[counter].itemName} at $${cart[counter].itemPrice}.`;
     } else if (counter == cart.length -1)
     {
-      result += ` and ${cart[counter].itemName} at $${cart[counter].itemPrice}.`
+      result += ` and ${cart[counter].itemName} at $${cart[counter].itemPrice}.`;
     } else 
     {
       result += ` ${cart[counter].itemName} at $${cart[counter].itemPrice},`;
     }
   }
+  return result;
   
 }
 
