@@ -55,8 +55,10 @@ function removeFromCart(item) {
   for(var counter = 0; counter < cart.length; counter++){
     if(cart[counter].itemName == item){
       cart.splice(counter, 1);
+      return cart;
     }
   }
+  return ""
 }
 
 function placeOrder(cardNumber) {
